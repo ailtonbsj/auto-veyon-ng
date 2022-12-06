@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#
+# unzip /home/usuario/up.zip -d /tmp
+# /tmp/up
+#
+
+echo "Executed." > /tmp/up.log
+cd ~
+rm up.zip
+
+PASS=escola
+echo $PASS | sudo -S apt update
+echo $PASS | sudo -S apt install seduc-xftheme -y --reinstall
+echo $PASS | sudo -S reboot
+
+echo "Finished." >> /tmp/up.log
+rm -rf /tmp/up

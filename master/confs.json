@@ -1,0 +1,66 @@
+{
+    "AccessControl": {
+        "UserGroupsBackend": "2917cdeb-ac13-4099-8715-20368254a367"
+    },
+    "Authentication": {
+        "Method": 1
+    },
+    "DesktopServices": {
+        "PredefinedApplications": {
+            "JsonStoreArray": [
+                {
+                    "Name": "UP (Extrair)",
+                    "Path": "unzip /home/usuario/up.zip -d /tmp",
+                    "Type": 1,
+                    "Uid": "{776f6316-3459-42c6-a084-a16937d852fc}"
+                },
+                {
+                    "Name": "UP (Executar)",
+                    "Path": "/tmp/up",
+                    "Type": 1,
+                    "Uid": "{6284d34c-fe2e-4d04-81bb-757026db55db}"
+                },
+                {
+                    "Name": "Bloquear Tela",
+                    "Path": "superlock",
+                    "Type": 1,
+                    "Uid": "{ac74be00-fd4a-4249-a48e-f9ff62985242}"
+                },
+                {
+                    "Name": "Desbloquear Tela",
+                    "Path": "superunlock",
+                    "Type": 1,
+                    "Uid": "{9e378e97-1e9d-46e8-9a50-ae29508689dc}"
+                },
+                {
+                    "Name": "Maximizar Janela",
+                    "Path": "wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz",
+                    "Type": 1,
+                    "Uid": "{99bfb6f8-1df8-400d-877c-ce24ab433ce6}"
+                },
+                {
+                    "Name": "Fechar Chrome",
+                    "Path": "pkill chrome",
+                    "Type": 1,
+                    "Uid": "{2ba6e2f4-acf0-41e7-b5c3-f18f7c4f1598}"
+                },
+                {
+                    "Name": "Fechar alertas de erros",
+                    "Path": "pkill update-notifier",
+                    "Type": 1,
+                    "Uid": "{5fc34c24-0a87-4460-8764-3b7a6b867fee}"
+                }
+            ]
+        }
+    },
+    "Features": {
+        "DisabledFeatures": [
+            "{07b375e1-8ab6-4b48-bcb7-75fb3d56035b}",
+            "{b4e542e2-1deb-48ac-910a-bbf8ac9a0bde}",
+            "{ccb535a2-1d24-4cc1-a709-8b47d2b2ac79}"
+        ]
+    },
+    "NetworkObjectDirectory": {
+        "Plugin": "14bacaaa-ebe5-449c-b881-5b382f952571"
+    }
+}

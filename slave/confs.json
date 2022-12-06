@@ -1,0 +1,14 @@
+{
+    "AccessControl": {
+        "UserGroupsBackend": "2917cdeb-ac13-4099-8715-20368254a367"
+    },
+    "Authentication": {
+        "Method": 1
+    },
+    "LDAP": {
+        "LocationNameAttribute": "cn"
+    },
+    "NetworkObjectDirectory": {
+        "Plugin": "14bacaaa-ebe5-449c-b881-5b382f952571"
+    }
+}
