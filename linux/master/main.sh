@@ -9,10 +9,15 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-wget -q --no-check-certificate --show-progress -O /tmp/veyon.deb "https://github.com/veyon/veyon/releases/download/v4.8.3/veyon_4.8.3.0-ubuntu.mantic_amd64.deb"
-
 apt update
-apt install /tmp/veyon.deb -y
+
+debpkg=/usr/wx-center/modules/Veyon/veyon.deb
+if [ ! -f $debpkg ]; then
+    wget -q --no-check-certificate --show-progress -O /tmp/veyon.deb "https://github.com/veyon/veyon/releases/download/v4.8.3/veyon_4.8.3.0-ubuntu.mantic_amd64.deb"
+    apt install /tmp/veyon.deb -y
+else
+    apt install $debpkg -y
+fi
 
 #sed -i '/Exec=/c\Exec=sudo /usr/bin/veyon-master' /usr/share/applications/veyon-master.desktop
 #sed -i '/Terminal=false/c\Terminal=true' /usr/share/applications/veyon-master.desktop

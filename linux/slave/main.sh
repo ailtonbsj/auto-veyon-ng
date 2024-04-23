@@ -9,10 +9,15 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-wget -q --no-check-certificate --show-progress -O /tmp/veyon.deb "https://github.com/veyon/veyon/releases/download/v4.8.3/veyon_4.8.3.0-ubuntu.mantic_amd64.deb"
-
 apt update
-apt install /tmp/veyon.deb -y
+
+debpkg=/usr/wx-center/modules/Veyon/veyon.deb
+if [ ! -f $debpkg ]; then
+    wget -q --no-check-certificate --show-progress -O /tmp/veyon.deb "https://github.com/veyon/veyon/releases/download/v4.8.3/veyon_4.8.3.0-ubuntu.mantic_amd64.deb"
+    apt install /tmp/veyon.deb -y
+else
+    apt install $debpkg -y
+fi
 
 echo "Waiting for master beam..."
 masterPC=$(nc -w1 -lup 12001).local
