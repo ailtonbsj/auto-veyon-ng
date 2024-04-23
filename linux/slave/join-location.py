@@ -3,8 +3,7 @@ from socket import *
 import netifaces
 import sys
 
-
-serverName = sys.argv[1]+'.local'
+serverName = sys.argv[1]
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect( (serverName, serverPort) )

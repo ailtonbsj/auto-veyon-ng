@@ -2,63 +2,58 @@
     "AccessControl": {
         "UserGroupsBackend": "2917cdeb-ac13-4099-8715-20368254a367"
     },
-    "Authentication": {
-        "Method": 1
-    },
-    "DesktopServices": {
-        "PredefinedApplications": {
+    "BuiltinDirectory": {
+        "NetworkObjects": {
             "JsonStoreArray": [
-                {
-                    "Name": "UP (Extrair)",
-                    "Path": "unzip /home/usuario/up.zip -d /tmp",
-                    "Type": 1,
-                    "Uid": "{776f6316-3459-42c6-a084-a16937d852fc}"
-                },
-                {
-                    "Name": "UP (Executar)",
-                    "Path": "/tmp/up",
-                    "Type": 1,
-                    "Uid": "{6284d34c-fe2e-4d04-81bb-757026db55db}"
-                },
-                {
-                    "Name": "Bloquear Tela",
-                    "Path": "superlock",
-                    "Type": 1,
-                    "Uid": "{ac74be00-fd4a-4249-a48e-f9ff62985242}"
-                },
-                {
-                    "Name": "Desbloquear Tela",
-                    "Path": "superunlock",
-                    "Type": 1,
-                    "Uid": "{9e378e97-1e9d-46e8-9a50-ae29508689dc}"
-                },
-                {
-                    "Name": "Maximizar Janela",
-                    "Path": "wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz",
-                    "Type": 1,
-                    "Uid": "{99bfb6f8-1df8-400d-877c-ce24ab433ce6}"
-                },
-                {
-                    "Name": "Fechar Chrome",
-                    "Path": "pkill chrome",
-                    "Type": 1,
-                    "Uid": "{2ba6e2f4-acf0-41e7-b5c3-f18f7c4f1598}"
-                },
-                {
-                    "Name": "Fechar alertas de erros",
-                    "Path": "pkill update-notifier",
-                    "Type": 1,
-                    "Uid": "{5fc34c24-0a87-4460-8764-3b7a6b867fee}"
-                }
             ]
         }
     },
-    "Features": {
-        "DisabledFeatures": [
-            "{07b375e1-8ab6-4b48-bcb7-75fb3d56035b}",
-            "{b4e542e2-1deb-48ac-910a-bbf8ac9a0bde}",
-            "{ccb535a2-1d24-4cc1-a709-8b47d2b2ac79}"
-        ]
+    "Core": {
+        "ApplicationVersion": 8,
+        "InstallationID": "37a3a49b-403a-4992-953b-a8d0704398de",
+        "PluginVersions": {
+            "JsonStoreObject": {
+                "{14bacaaa-ebe5-449c-b881-5b382f952571}": "1.1",
+                "{1b08265b-348f-4978-acaa-45d4f6b90bd9}": "1.1",
+                "{2917cdeb-ac13-4099-8715-20368254a367}": "1.1",
+                "{2ad98ccb-e9a5-43ef-8c4c-876ac5efbcb1}": "1.1",
+                "{387a0c43-1355-4ff6-9e1f-d098e9ce5127}": "1.1",
+                "{39d7a07f-94db-4912-aa1a-c4df8aee3879}": "1.1",
+                "{4122e8ca-b617-4e36-b851-8e050ed2d82e}": "1.2",
+                "{4790bad8-4c56-40d5-8361-099a68f0c24b}": "1.1",
+                "{63928a8a-4c51-4bfd-888e-9e13c6f3907a}": "1.1",
+                "{67dfc1c1-8f37-4539-a298-16e74e34fd8b}": "1.1",
+                "{6f0a491e-c1c6-4338-8244-f823b0bf8670}": "1.2",
+                "{80580500-2e59-4297-9e35-e53959b028cd}": "1.2",
+                "{8ae6668b-9c12-4b29-9bfc-ff89f6604164}": "1.1",
+                "{a54ee018-42bf-4569-90c7-0d8470125ccf}": "2.0",
+                "{d4bb9c42-9eef-4ecb-8dd5-dfd84b355481}": "1.0",
+                "{e11bee03-b99c-465c-bf90-7e5339b83f6b}": "1.0",
+                "{ee322521-f4fb-482d-b082-82a79003afa7}": "1.1",
+                "{f626f759-7691-45c0-bd4a-37171d98d219}": "1.0"
+            }
+        }
+    },
+    "LDAP": {
+        "ComputerLocationAttribute": "",
+        "ComputerLocationsByAttribute": "false",
+        "ComputerLocationsByContainer": "false",
+        "LocationNameAttribute": "",
+        "UserLoginNameAttribute": ""
+    },
+    "Master": {
+        "AllowAddingHiddenLocations": "false",
+        "AutoAdjustMonitoringIconSize": "false",
+        "AutoOpenComputerSelectPanel": "false",
+        "AutoSelectCurrentLocation": "false",
+        "ConfirmUnsafeActions": "false",
+        "HideComputerFilter": "false",
+        "HideEmptyLocations": "false",
+        "HideLocalComputer": "false",
+        "ShowCurrentLocationOnly": "false"
+    },
+    "Network": {
+        "VeyonServerPort": "11100"
     },
     "NetworkObjectDirectory": {
         "Plugin": "14bacaaa-ebe5-449c-b881-5b382f952571"
