@@ -8,7 +8,7 @@ serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect( (serverName, serverPort) )
 
-hostName = gethostname()
+hostName = open('/etc/hostname', 'r').readline().rstrip('\n')
 ifaces = netifaces.interfaces()
 ifaces.remove('lo')
 macAddr = netifaces.ifaddresses(ifaces[0])[netifaces.AF_LINK][0].get('addr')
