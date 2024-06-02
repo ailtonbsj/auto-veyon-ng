@@ -22,6 +22,9 @@ fi
 veyon-cli config import confs.json
 
 veyon-cli authkeys create lei
+chown :escola /etc/veyon/keys/private/lei/key
+chown :escola /etc/veyon/keys/public/lei/key
+
 veyon-cli authkeys export lei/public lei.pem
 
 veyon-cli networkobjects add location "LEI"

@@ -2,6 +2,9 @@
     "AccessControl": {
         "UserGroupsBackend": "2917cdeb-ac13-4099-8715-20368254a367"
     },
+    "Authentication": {
+        "Method": "1"
+    },
     "Core": {
         "ApplicationVersion": 5,
         "InstallationID": "17446e06-f96e-4982-89b3-9989cbb4df1d",

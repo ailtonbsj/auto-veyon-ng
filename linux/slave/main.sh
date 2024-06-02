@@ -30,6 +30,7 @@ fi
 veyon-cli config import confs.json
 wget http://$masterPC:8000/lei.pem -O lei.pem
 veyon-cli authkeys import lei/public lei.pem
+chown :escola /etc/veyon/keys/public/lei/key
 
 sleep 2
 systemctl restart veyon.service
