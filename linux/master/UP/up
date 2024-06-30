@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#
+# unzip /home/escola/up.zip -d /tmp
+# /tmp/up
+#
+
+echo "Executed." > /tmp/up.log
+cd ~
+rm up.zip
+
+mkdir /tmp/empty
+
+rsync -r --delete \
+--exclude '.*' \
+--exlude 'Documentos' \
+--exclude 'Downloads' \
+--exclude 'Imagens' \
+--exclude 'Modelos' \
+--exclude 'Músicas' \
+--exclude 'Público' \
+--exclude 'Vídeos' \
+--exclude 'Área\ de\ trabalho' /tmp/empty/ ~/
+
+rsync -r --delete /tmp/empty/ ~/Documentos/
+rsync -r --delete /tmp/empty/ ~/Downloads/
+rsync -r --delete /tmp/empty/ ~/Imagens/
+rsync -r --delete --exclude 'OpenDocument Spreadsheet.ods' --exclude 'OpenDocument Text.odt' --exclude 'Plain Text.txt' /tmp/empty/ ~/Modelos/
+rsync -r --delete /tmp/empty/ ~/Músicas/
+rsync -r --delete /tmp/empty/ ~/Público/
+rsync -r --delete /tmp/empty/ ~/Vídeos/
+rsync -r --delete /tmp/empty/ ~/Área\ de\ trabalho/
+
+echo "Finished." >> /tmp/up.log
+rm -rf /tmp/up
