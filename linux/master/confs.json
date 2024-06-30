@@ -42,7 +42,7 @@
             "JsonStoreArray": [
                 {
                     "Name": "Limpar todos arquivos",
-                    "Path": "xfce4-terminal -x bash -c 'limpar-todos-arquivos.sh'",
+                    "Path": "bash /home/escola/limpar-todos-arquivos.sh",
                     "Type": 1,
                     "Uid": "{6284d34c-fe2e-4d04-81bb-757026db55db}"
                 },

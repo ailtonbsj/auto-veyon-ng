@@ -1,7 +1,9 @@
 #!/bin/bash
 
 #
-# xfce4-terminal -x bash -c 'limpar-todos-arquivos.sh'
+# bash /home/escola/limpar-todos-arquivos.sh
+# ou:
+# xfce4-terminal -x bash /home/escola/limpar-todos-arquivos.sh
 #
 
 echo "Executed." > /tmp/wipe.log
