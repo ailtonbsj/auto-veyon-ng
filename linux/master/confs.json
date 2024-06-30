@@ -41,14 +41,8 @@
         "PredefinedApplications": {
             "JsonStoreArray": [
                 {
-                    "Name": "UP (Extrair)",
-                    "Path": "unzip /home/escola/up.zip -d /tmp",
-                    "Type": 1,
-                    "Uid": "{776f6316-3459-42c6-a084-a16937d852fc}"
-                },
-                {
-                    "Name": "UP (Executar)",
-                    "Path": "/tmp/up",
+                    "Name": "Limpar todos arquivos",
+                    "Path": "xfce4-terminal -x bash -c 'limpar-todos-arquivos.sh'",
                     "Type": 1,
                     "Uid": "{6284d34c-fe2e-4d04-81bb-757026db55db}"
                 },
